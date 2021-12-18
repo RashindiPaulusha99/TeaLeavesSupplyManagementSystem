@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="798.0" prefWidth="652.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddSupplierFormController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="95.0" prefWidth="658.0" style="-fx-background-color: #6c5ce7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="205.0" layoutY="20.0" prefHeight="55.0" prefWidth="249.0" style="-fx-background-color: #6c5ce7; -fx-background-radius: 20; -fx-border-radius: 20;" text="Save Supplier" textFill="#c8d6e5" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="2.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="2.0" layoutY="46.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="55.0" layoutY="5.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="112.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="159.0" layoutY="5.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="55.0" layoutY="46.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="112.0" layoutY="46.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="158.0" layoutY="46.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="454.0" layoutY="5.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="501.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="548.0" layoutY="5.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="597.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="460.0" layoutY="47.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="507.0" layoutY="47.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="554.0" layoutY="47.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="601.0" layoutY="46.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <VBox layoutX="24.0" layoutY="184.0" prefHeight="507.0" prefWidth="619.0" style="-fx-background-color: white;" stylesheets="@../Styles/style.css" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <AnchorPane prefHeight="34.0" prefWidth="619.0" />
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="619.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+               <children>
+                  <TextField fx:id="txtSupplierId" layoutX="10.0" layoutY="6.0" onKeyReleased="#supplier_KeyReleased" prefHeight="41.0" prefWidth="590.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                  <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="95.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Supplier ID">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="619.0" />
+            <AnchorPane layoutX="10.0" layoutY="44.0" prefHeight="49.0" prefWidth="619.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+               <children>
+                  <TextField fx:id="txtName" layoutX="17.0" layoutY="6.0" onKeyReleased="#supplier_KeyReleased" prefHeight="41.0" prefWidth="582.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                  <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="57.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Name">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="93.0" prefHeight="32.0" prefWidth="619.0" />
+            <AnchorPane layoutX="10.0" layoutY="119.0" prefHeight="49.0" prefWidth="619.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+               <children>
+                  <TextField fx:id="txtAddress" layoutX="11.0" layoutY="6.0" onKeyReleased="#supplier_KeyReleased" prefHeight="41.0" prefWidth="590.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                  <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="73.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Address">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="168.0" prefHeight="36.0" prefWidth="619.0" />
+            <AnchorPane layoutX="10.0" layoutY="232.0" prefHeight="211.0" prefWidth="613.0">
+               <children>
+                  <JFXRadioButton fx:id="radiobtnMale" layoutX="6.0" layoutY="2.0" onMouseClicked="#genderM_clicked" text="Male">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="radiobtnFemale" layoutX="154.0" layoutY="2.0" onMouseClicked="#genderF_clicked" prefHeight="21.0" prefWidth="79.0" text="Female">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <AnchorPane layoutX="-1.0" layoutY="57.0" prefHeight="49.0" prefWidth="305.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+                     <children>
+                        <TextField fx:id="txtContact" layoutX="11.0" layoutY="6.0" onKeyReleased="#supplier_KeyReleased" prefHeight="41.0" prefWidth="283.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                        <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="103.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Contact NO:">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="328.0" layoutY="57.0" prefHeight="49.0" prefWidth="290.0" styleClass="textPane" stylesheets="@../Styles/style.css" AnchorPane.leftAnchor="328.0" AnchorPane.rightAnchor="1.0">
+                     <children>
+                        <TextField fx:id="txtNIC" layoutX="13.0" layoutY="6.0" onKeyReleased="#supplier_KeyReleased" prefHeight="41.0" prefWidth="259.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                        <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="47.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="NIC">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-1.0" layoutY="146.0" prefHeight="49.0" prefWidth="298.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+                     <children>
+                        <TextField fx:id="txtArea" layoutX="16.0" layoutY="6.0" onKeyReleased="#supplier_KeyReleased" prefHeight="41.0" prefWidth="269.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                        <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="140.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Area of the Land">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="304.0" layoutY="152.0" prefHeight="34.0" prefWidth="57.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="(acre)">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="332.0" layoutY="706.0" onAction="#saveSupplierOnAction" prefHeight="49.0" prefWidth="305.0" style="-fx-background-radius: 30; -fx-background-color: #2980b9; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="706.0" onAction="#clearSupplierDataOnAction" prefHeight="49.0" prefWidth="298.0" style="-fx-background-radius: 30; -fx-background-color: #ff7675; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="Clear" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtUsername" layoutX="342.0" layoutY="131.0" prefHeight="31.0" prefWidth="283.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <ComboBox fx:id="cmbUserId" layoutX="24.0" layoutY="131.0" prefHeight="31.0" prefWidth="283.0" style="-fx-background-color: white; -fx-border-color: black;" />
+      <Label layoutX="30.0" layoutY="110.0" prefHeight="21.0" prefWidth="125.0" text="Select User ID   *">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="346.0" layoutY="110.0" prefHeight="21.0" prefWidth="125.0" text="User Name  *">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="11.0" layoutY="186.0" prefHeight="3.0" prefWidth="632.0" />
+   </children>
+</AnchorPane>

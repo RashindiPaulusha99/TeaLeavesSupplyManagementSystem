@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginContext" prefHeight="902.0" prefWidth="1272.0" style="-fx-background-color: #78e08f;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="902.0" fitWidth="1279.0" layoutX="-3.0" opacity="0.55" pickOnBounds="true" AnchorPane.leftAnchor="-3.0">
+         <image>
+            <Image url="@../assets/tea-plant-leaves.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="363.0" layoutY="126.0" prefHeight="646.0" prefWidth="566.0" style="-fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 5;">
+         <children>
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="306.0" layoutY="360.0" onAction="#openDashBoardFormOnAction" prefHeight="48.0" prefWidth="187.0" style="-fx-background-color: #0abde3; -fx-background-radius: 30; -fx-border-radius: 30;" text="LOGIN" textFill="WHITE" AnchorPane.leftAnchor="303.0" AnchorPane.rightAnchor="76.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="204.0" layoutY="88.0" prefHeight="54.0" prefWidth="192.0" text="LOGIN" textFill="WHITE" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="182.0">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblErrorMassage" layoutX="104.0" layoutY="307.0" prefHeight="21.0" prefWidth="390.0" textFill="#e10c0c" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="75.0">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="84.0" layoutY="550.0" prefHeight="27.0" prefWidth="181.0" text="Not  A  Member ?" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="307.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="91.0" layoutY="448.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="160.0" text="Remember me" AnchorPane.leftAnchor="88.0">
+               <font>
+                  <Font size="17.0" />
+               </font></CheckBox>
+            <Separator layoutX="37.0" layoutY="515.0" prefHeight="3.0" prefWidth="521.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="26.0" />
+            <JFXButton buttonType="RAISED" layoutX="279.0" layoutY="542.0" onAction="#openRegisterFormOnAction" prefHeight="42.0" prefWidth="174.0" text="Register here" textFill="#341f97" AnchorPane.leftAnchor="276.0" AnchorPane.rightAnchor="116.0">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtUsername" layoutX="103.0" layoutY="175.0" prefHeight="48.0" prefWidth="387.0" promptText="   Username" style="-fx-background-radius: 25; -fx-border-radius: 25;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="79.0" />
+            <Separator layoutX="89.0" layoutY="121.0" prefHeight="3.0" prefWidth="144.0" AnchorPane.leftAnchor="86.0" AnchorPane.topAnchor="118.0" />
+            <Separator layoutX="361.0" layoutY="114.0" prefHeight="3.0" prefWidth="144.0" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="114.0" />
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="445.0" layoutY="189.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-person-64.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="112.0" layoutY="360.0" onAction="#backToWelcomeFormOnAction" prefHeight="48.0" prefWidth="180.0" style="-fx-background-color: #ff6b6b; -fx-background-radius: 30; -fx-border-radius: 30;" text="CANCEL" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <PasswordField fx:id="txtPassword" layoutX="106.0" layoutY="248.0" prefHeight="48.0" prefWidth="381.0" promptText="   Password" style="-fx-background-radius: 25; -fx-border-radius: 25;" />
+            <ImageView fitHeight="21.0" fitWidth="17.0" layoutX="448.0" layoutY="261.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-lock-90.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="320.0" layoutY="440.0" onAction="#openChangePasswordFormOnAction" prefHeight="42.0" prefWidth="192.0" text="Forgot Password?">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="130.0" fitWidth="144.0" layoutX="574.0" layoutY="69.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons8-user-90%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

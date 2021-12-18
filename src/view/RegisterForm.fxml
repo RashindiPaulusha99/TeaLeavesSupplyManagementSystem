@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerContext" prefHeight="831.0" prefWidth="618.0" style="-fx-background-color: #38ada9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterFormController">
+   <children>
+      <AnchorPane layoutX="29.0" layoutY="32.0" prefHeight="612.0" prefWidth="557.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="32.0">
+         <effect>
+            <DropShadow height="27.22" radius="16.997500000000002" spread="0.06" width="42.77" />
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="142.0" layoutY="44.0" prefHeight="50.0" prefWidth="269.0" text="REGISTER FORM" textFill="#686de0" underline="true">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <Separator layoutX="41.0" layoutY="69.0" prefHeight="3.0" prefWidth="88.0" />
+            <Separator layoutX="419.0" layoutY="71.0" prefHeight="3.0" prefWidth="88.0" />
+            <JFXCheckBox layoutX="91.0" layoutY="593.0" prefHeight="25.0" prefWidth="119.0" text="I accept the " unCheckedColor="BLACK" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="347.0">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXCheckBox>
+            <Label layoutX="210.0" layoutY="593.0" prefHeight="25.0" prefWidth="253.0" text="Tearms  Of Use &amp; Privacy Policy" textFill="#00a8ff" underline="true" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="94.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="178.0" layoutY="662.0" onAction="#registerOnAction" prefHeight="57.0" prefWidth="198.0" style="-fx-background-color: #4cd137;" text="Register Now" textFill="WHITE" AnchorPane.leftAnchor="178.0" AnchorPane.rightAnchor="181.0" AnchorPane.topAnchor="662.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </JFXButton>
+            <VBox layoutX="53.0" layoutY="128.0" prefHeight="447.0" prefWidth="451.0">
+               <children>
+                  <AnchorPane prefHeight="53.0" prefWidth="451.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+                     <children>
+                        <TextField fx:id="txtUserId" layoutX="11.0" layoutY="5.0" onKeyReleased="#user_KeyReleased" prefHeight="45.0" prefWidth="429.0" style="-fx-background-color: white;" styleClass="textField" stylesheets="@../Styles/style.css" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="13.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="36.0" prefWidth="451.0" />
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="451.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+                     <children>
+                        <TextField fx:id="txtUsername" layoutX="9.0" layoutY="4.0" onKeyReleased="#user_KeyReleased" prefHeight="45.0" prefWidth="425.0" style="-fx-background-color: white;" styleClass="textField" stylesheets="@../Styles/style.css" />
+                        <Label layoutX="14.0" layoutY="-10.0" prefHeight="21.0" prefWidth="81.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Username" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="63.0" prefHeight="37.0" prefWidth="451.0" />
+                  <AnchorPane layoutX="10.0" layoutY="91.0" prefHeight="53.0" prefWidth="451.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+                     <children>
+                        <Label layoutX="8.0" layoutY="-10.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Name" />
+                        <TextField fx:id="txtName" layoutX="9.0" layoutY="11.0" onKeyReleased="#user_KeyReleased" prefHeight="37.0" prefWidth="425.0" style="-fx-background-color: white;" styleClass="textField" stylesheets="@../Styles/style.css" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="152.0" prefHeight="37.0" prefWidth="451.0" />
+                  <AnchorPane layoutX="10.0" layoutY="189.0" prefHeight="53.0" prefWidth="451.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+                     <children>
+                        <Label layoutX="13.0" layoutY="-8.0" prefHeight="21.0" prefWidth="81.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Password" />
+                        <PasswordField fx:id="txtPassword" layoutX="8.0" layoutY="8.0" onKeyReleased="#user_KeyReleased" prefHeight="37.0" prefWidth="436.0" styleClass="passwordField" stylesheets="@../Styles/style.css" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="242.0" prefHeight="37.0" prefWidth="451.0" />
+                  <AnchorPane layoutX="10.0" layoutY="279.0" prefHeight="53.0" prefWidth="451.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+                     <children>
+                        <Label layoutX="13.0" layoutY="-8.0" prefHeight="21.0" prefWidth="139.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Confirm Password" />
+                        <PasswordField fx:id="txtConfirmPassword" layoutX="8.0" layoutY="8.0" onKeyReleased="#user_KeyReleased" prefHeight="37.0" prefWidth="436.0" styleClass="passwordField" stylesheets="@../Styles/style.css" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <Label layoutX="63.0" layoutY="120.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="UserID" />
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow height="39.66" radius="21.6625" spread="0.11" width="48.99" />
+   </effect>
+</AnchorPane>

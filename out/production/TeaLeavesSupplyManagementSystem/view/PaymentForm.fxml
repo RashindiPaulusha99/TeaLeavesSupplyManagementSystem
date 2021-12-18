@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paymentContext" prefHeight="838.0" prefWidth="1092.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="34.0" prefHeight="37.0" prefWidth="1034.0" text="Make Payment Form" textFill="#10ac84">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="31.0" />
+         </font>
+      </Label>
+      <Separator layoutX="23.0" layoutY="89.0" prefHeight="3.0" prefWidth="1050.0" />
+      <JFXComboBox fx:id="cmbSupplierIds" focusColor="#30336b" layoutX="745.0" layoutY="154.0" prefHeight="31.0" prefWidth="273.0" promptText="Select Supplier ID" />
+      <JFXDatePicker fx:id="startDay" defaultColor="#30336b" layoutX="65.0" layoutY="154.0" prefHeight="31.0" prefWidth="254.0" promptText="Start Day" />
+      <JFXDatePicker fx:id="EndDay" defaultColor="#30336b" layoutX="376.0" layoutY="154.0" prefHeight="31.0" prefWidth="263.0" promptText="End Day" />
+      <TableView fx:id="tblPayment" layoutX="67.0" layoutY="206.0" prefHeight="247.0" prefWidth="959.0" stylesheets="@../Styles/style.css">
+        <columns>
+          <TableColumn prefWidth="198.0" text="Supply ID" />
+          <TableColumn prefWidth="252.0" text="Supply Date" />
+            <TableColumn prefWidth="258.0" text="Total Weight" />
+            <TableColumn prefWidth="250.0" text="Tatal Cost" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="868.0" layoutY="687.0" onAction="#addToPaymentOnAction" prefHeight="44.0" prefWidth="198.0" style="-fx-background-color: #ED4C67;" text="Make A Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="12.0" layoutY="472.0" prefHeight="3.0" prefWidth="1066.0" />
+      <Label layoutX="325.0" layoutY="491.0" prefHeight="26.0" prefWidth="183.0" text="Fertilizer Qty(KG)   *" textFill="#30336b">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFertilizerQty" layoutX="325.0" layoutY="522.0" onKeyReleased="#payment_KeyReleased" prefHeight="31.0" prefWidth="198.0" style="-fx-border-width: 2;" />
+      <Label layoutX="579.0" layoutY="491.0" prefHeight="26.0" prefWidth="225.0" text="Fertilizer Price  Per 1KG  *" textFill="#30336b">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFertilizerPrice" layoutX="581.0" layoutY="522.0" onKeyReleased="#payment_KeyReleased" prefHeight="31.0" prefWidth="198.0" style="-fx-border-width: 2;" />
+      <Label layoutX="67.0" layoutY="580.0" prefHeight="26.0" prefWidth="175.0" text="Tea Packet Qty   *" textFill="#30336b">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTeaPaQty" layoutX="67.0" layoutY="616.0" onKeyReleased="#payment_KeyReleased" prefHeight="31.0" prefWidth="198.0" style="-fx-border-width: 2;" />
+      <Label layoutX="324.0" layoutY="580.0" prefHeight="26.0" prefWidth="175.0" text="Packet Price(Rs.)   *" textFill="#30336b">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPacketPrice" layoutX="326.0" layoutY="616.0" onKeyReleased="#payment_KeyReleased" prefHeight="31.0" prefWidth="198.0" style="-fx-border-width: 2;" />
+      <Label layoutX="834.0" layoutY="491.0" prefHeight="26.0" prefWidth="145.0" text="Advance(Rs.)    *" textFill="#30336b">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="579.0" layoutY="577.0" prefHeight="26.0" prefWidth="145.0" text="Discount(%)    *" textFill="#30336b">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDiscount" layoutX="578.0" layoutY="613.0" onKeyReleased="#payment_KeyReleased" prefHeight="31.0" prefWidth="207.0" style="-fx-border-width: 2;" />
+      <TextField fx:id="txtAdvance" layoutX="834.0" layoutY="522.0" onKeyReleased="#payment_KeyReleased" prefHeight="31.0" prefWidth="198.0" style="-fx-border-width: 2;" />
+      <Label layoutX="65.0" layoutY="491.0" prefHeight="26.0" prefWidth="145.0" text="Transport(Rs.)   *" textFill="#30336b">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTransport" layoutX="67.0" layoutY="522.0" onKeyReleased="#payment_KeyReleased" prefHeight="31.0" prefWidth="198.0" />
+      <JFXButton buttonType="RAISED" layoutX="671.0" layoutY="687.0" onAction="#editDetailOnAction" prefHeight="44.0" prefWidth="166.0" style="-fx-background-color: #D980FA;" text="Edit Payments" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="926.0" layoutY="769.0" onAction="#issueBillOnAction" prefHeight="44.0" prefWidth="122.0" style="-fx-background-color: #0abde3;" text=" Issue Bill" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane layoutX="26.0" layoutY="98.0" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: #130f40;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="Payment ID :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPaymentId" layoutX="129.0" layoutY="6.0" prefHeight="26.0" prefWidth="97.0" text="P00-0001" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="28.0" layoutY="687.0" onAction="#deleteDetailOnAction" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: red;" text="Delete Payments" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="13.0" layoutY="672.0" prefHeight="3.0" prefWidth="1066.0" />
+      <Separator layoutX="13.0" layoutY="751.0" prefHeight="3.0" prefWidth="1066.0" />
+   </children>
+</AnchorPane>

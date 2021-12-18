@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="billContext" prefHeight="838.0" prefWidth="1092.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrintBillFormController">
+   <children>
+      <Separator layoutX="14.0" layoutY="16.0" prefHeight="3.0" prefWidth="1063.0" />
+      <Separator layoutX="13.0" layoutY="824.0" prefHeight="1.0" prefWidth="1063.0" />
+      <Separator layoutX="12.0" layoutY="14.0" orientation="VERTICAL" prefHeight="809.0" prefWidth="1.0" />
+      <Separator layoutX="1075.0" layoutY="14.0" orientation="VERTICAL" prefHeight="809.0" prefWidth="1.0" />
+      <JFXButton layoutX="34.0" layoutY="698.0" prefHeight="39.0" prefWidth="1021.0" style="-fx-background-color: #fa983a;" text="Payment Proceeded">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <Line endX="655.7928466796875" endY="-0.207122802734375" layoutX="183.0" layoutY="101.0" startX="72.79290771484375" startY="-0.207122802734375" />
+      <Line endX="657.2071533203125" endY="-0.792877197265625" layoutX="181.0" layoutY="498.0" startX="72.79290771484375" startY="-0.7928466796875" />
+      <JFXButton buttonType="RAISED" layoutX="562.0" layoutY="760.0" onAction="#printBillOnAction" prefHeight="39.0" prefWidth="159.0" style="-fx-background-color: #78e08f;" text="PRINT BILL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Line endX="100.0" startX="-100.0" />
+      <Line endX="-94.5" endY="545.5" layoutX="932.0" layoutY="132.0" startX="-92.7071533203125" startY="-31.707122802734375" />
+      <Line endX="-91.5" endY="544.5" layoutX="346.0" layoutY="131.0" startX="-91.70709228515625" startY="-30.707122802734375" />
+      <Label layoutX="907.0" layoutY="25.0" prefHeight="27.0" prefWidth="58.0" text="Date :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="908.0" layoutY="54.0" prefHeight="21.0" prefWidth="51.0" text="Time :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblDate" layoutX="956.0" layoutY="28.0" prefHeight="21.0" prefWidth="109.0" text="2021/12/03" />
+      <Label fx:id="lblTime" layoutX="959.0" layoutY="54.0" prefHeight="21.0" prefWidth="109.0" text="12:02:05" />
+      <Line endX="653.7928466796875" layoutX="185.0" layoutY="138.0" startX="70.79290771484375" />
+      <Label alignment="CENTER" layoutX="470.0" layoutY="108.0" prefHeight="21.0" prefWidth="154.0" text="Total Payment">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="368.0" layoutY="634.0" prefHeight="30.0" prefWidth="177.0" text="Total Payment     :" textFill="#eb0909">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalPayment" layoutX="599.0" layoutY="634.0" prefHeight="30.0" prefWidth="198.0" text="00.00 /=" textFill="#f80505">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="309.0" layoutY="189.0" prefHeight="26.0" prefWidth="241.0" text="Supplied Tea Leaves Quantity ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalWeight" layoutX="628.0" layoutY="192.0" prefHeight="21.0" prefWidth="109.0" text="00.00" />
+      <Label layoutX="308.0" layoutY="216.0" prefHeight="26.0" prefWidth="177.0" text="Total Cost For Leaves ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalCost" layoutX="628.0" layoutY="216.0" prefHeight="21.0" prefWidth="109.0" text="00.00" />
+      <Label layoutX="308.0" layoutY="398.0" prefHeight="26.0" prefWidth="168.0" text="Transport Charges  ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTransport" layoutX="629.0" layoutY="401.0" prefHeight="21.0" prefWidth="109.0" text="00.00" />
+      <Label layoutX="309.0" layoutY="317.0" prefHeight="26.0" prefWidth="159.0" text="Price For Fertilizer">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFertilizer" layoutX="629.0" layoutY="317.0" prefHeight="21.0" prefWidth="109.0" text="00.00" />
+      <Label layoutX="308.0" layoutY="370.0" prefHeight="26.0" prefWidth="182.0" text="Price For Tea Packets">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTeaPacket" layoutX="629.0" layoutY="373.0" prefHeight="21.0" prefWidth="109.0" text="00.00" />
+      <Line endX="580.5" endY="16.0" layoutX="257.0" layoutY="609.0" startX="-1.0" startY="16.0" />
+      <Line endX="582.5" endY="16.0" layoutX="256.0" layoutY="660.0" startX="-1.0" startY="16.0" />
+      <Label layoutX="309.0" layoutY="455.0" prefHeight="26.0" prefWidth="168.0" text="Discount                  ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDiscount" layoutX="631.0" layoutY="458.0" prefHeight="21.0" prefWidth="67.0" text="0 %" />
+      <Separator layoutX="22.0" layoutY="88.0" prefHeight="3.0" prefWidth="1046.0" />
+      <Label layoutX="22.0" layoutY="36.0" text="Payment ID :" textFill="#292643">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="580.0" layoutY="192.0" prefHeight="21.0" prefWidth="6.0" text=":" />
+      <Label layoutX="580.0" layoutY="216.0" prefHeight="21.0" prefWidth="6.0" text=":" />
+      <Label layoutX="582.0" layoutY="317.0" prefHeight="21.0" prefWidth="3.0" text=":" />
+      <Label layoutX="583.0" layoutY="373.0" prefHeight="21.0" prefWidth="6.0" text=":" />
+      <Label layoutX="582.0" layoutY="401.0" prefHeight="21.0" prefWidth="6.0" text=":" />
+      <Label layoutX="583.0" layoutY="429.0" prefHeight="21.0" prefWidth="6.0" text=":" />
+      <Label layoutX="309.0" layoutY="426.0" prefHeight="26.0" prefWidth="168.0" text="Advance                   ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAdvance" layoutX="630.0" layoutY="429.0" prefHeight="21.0" prefWidth="109.0" text="00.00" />
+      <Label layoutX="583.0" layoutY="458.0" prefHeight="21.0" prefWidth="6.0" text=":" />
+      <Label layoutX="283.0" layoutY="512.0" prefHeight="26.0" prefWidth="168.0" text="Gross Amount" textFill="#2a0c61">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="546.0" prefHeight="26.0" prefWidth="168.0" text="Reduced Price" textFill="#2a0c61">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="584.0" prefHeight="26.0" prefWidth="168.0" text="Net Amount" textFill="#2a0c61">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGrossAmount" layoutX="629.0" layoutY="513.0" prefHeight="21.0" prefWidth="109.0" text="00.00" />
+      <Label fx:id="lblDiscountPrice" layoutX="629.0" layoutY="545.0" prefHeight="21.0" prefWidth="109.0" text="00.00" />
+      <Label fx:id="lblNetAmount" layoutX="628.0" layoutY="577.0" prefHeight="21.0" prefWidth="109.0" text="00.00">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <JFXButton buttonType="RAISED" layoutX="395.0" layoutY="759.0" onAction="#cancelOnAction" prefHeight="41.0" prefWidth="140.0" style="-fx-background-color: #c52d4c;" text="CANCEL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="390.0" layoutY="24.0" prefHeight="26.0" prefWidth="133.0" text="Supplier ID        :" textFill="#292643">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierId" layoutX="528.0" layoutY="25.0" prefHeight="28.0" prefWidth="103.0" text="S00-0001">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="715.0" layoutY="192.0" text="KG" />
+      <Label layoutX="715.0" layoutY="216.0" text="Rs." />
+      <Label layoutX="284.0" layoutY="156.0" prefHeight="26.0" prefWidth="103.0" text="Tea Leaves" textFill="#2a0c61" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="255.0" prefHeight="26.0" prefWidth="103.0" text="Reductions" textFill="#2a0c61" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="582.0" layoutY="515.0" prefHeight="21.0" prefWidth="6.0" text=":" />
+      <Label layoutX="581.0" layoutY="547.0" prefHeight="21.0" prefWidth="6.0" text=":" />
+      <Label layoutX="581.0" layoutY="579.0" prefHeight="21.0" prefWidth="6.0" text=":" />
+      <Label layoutX="717.0" layoutY="317.0" text="Rs." />
+      <Label layoutX="717.0" layoutY="372.0" text="Rs." />
+      <Label layoutX="308.0" layoutY="343.0" prefHeight="26.0" prefWidth="154.0" text="Tea Packets Qty">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="582.0" layoutY="346.0" prefHeight="21.0" prefWidth="3.0" text=":" />
+      <Label fx:id="lblPacketQty" layoutX="631.0" layoutY="346.0" prefHeight="21.0" prefWidth="42.0" text="0" />
+      <Label layoutX="717.0" layoutY="399.0" text="Rs." />
+      <Label layoutX="717.0" layoutY="428.0" text="Rs." />
+      <Label layoutX="309.0" layoutY="289.0" prefHeight="26.0" prefWidth="118.0" text="Fertilizer Qty">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFertilizerQty" layoutX="629.0" layoutY="287.0" prefHeight="21.0" prefWidth="109.0" text="00.00" />
+      <Label layoutX="716.0" layoutY="287.0" text="KG" />
+      <Label layoutX="581.0" layoutY="288.0" prefHeight="21.0" prefWidth="3.0" text=":" />
+      <Line endX="253.5" endY="-0.7928466796875" layoutX="513.0" layoutY="572.0" startX="72.79290771484375" startY="-0.7928466796875" />
+      <Line endX="253.5" endY="-0.7928466796875" layoutX="514.0" layoutY="610.0" startX="72.79290771484375" startY="-0.7928466796875" />
+      <Line endX="253.5" endY="-0.7928466796875" layoutX="514.0" layoutY="614.0" startX="72.79290771484375" startY="-0.7928466796875" />
+      <Label layoutX="566.0" layoutY="634.0" text="Rs." textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="715.0" layoutY="577.0" text="Rs.">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="715.0" layoutY="512.0" text="Rs." />
+      <Label layoutX="715.0" layoutY="542.0" text="Rs." />
+      <Label layoutX="390.0" layoutY="52.0" text="Supplier Name  :" textFill="#292643">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierName" layoutX="528.0" layoutY="51.0" prefHeight="28.0" prefWidth="201.0" text="name">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPaymentId" layoutX="138.0" layoutY="36.0" prefHeight="28.0" prefWidth="118.0" style="-fx-border-color: black;" text="    P00-0001">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

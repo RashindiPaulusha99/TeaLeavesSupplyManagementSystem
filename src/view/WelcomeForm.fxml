@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="welcomeContext" prefHeight="902.0" prefWidth="1272.0" style="-fx-background-color: #079992;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WelcomeFormController">
+   <children>
+      <Label layoutX="116.0" layoutY="176.0" prefHeight="96.0" prefWidth="631.0" text="ZETA Tea Factory" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold Italic" size="78.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="161.0" layoutY="742.0" onAction="#loginOnAction" prefHeight="58.0" prefWidth="228.0" style="-fx-border-color: white; -fx-border-radius: 25; -fx-background-radius: 25; -fx-border-width: 2;" text="Get Started" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="415.0" fitWidth="323.0" layoutX="255.0" layoutY="315.0" opacity="0.32" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/1479648-a-cup-of-green-tea-cup-green-tea-leaf-png-image-and-clipart-green-tea-png-650_513_preview.png" />
+         </image>
+         <effect>
+            <DropShadow color="#2c945a" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="509.0" fitWidth="550.0" layoutX="479.0" layoutY="268.0" opacity="0.47" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/68-688741_images-of-black-tea-leaves-png-green-tea.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="87.0" layoutY="65.0" prefHeight="15.0" prefWidth="1105.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow radius="12.3325" spread="0.14" width="30.33" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="87.0" layoutY="819.0" prefHeight="15.0" prefWidth="1105.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="87.0" layoutY="65.0" prefHeight="769.0" prefWidth="17.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect></AnchorPane>
+      <AnchorPane layoutX="1175.0" layoutY="65.0" prefHeight="769.0" prefWidth="17.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect></AnchorPane>
+      <ImageView fitHeight="170.0" fitWidth="182.0" layoutX="1078.0" layoutY="721.0" pickOnBounds="true" style="-fx-rotate: -45;">
+         <image>
+            <Image url="@../assets/icons8-leaves-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="177.0" fitWidth="195.0" layoutX="2.0" layoutY="-1.0" pickOnBounds="true" style="-fx-rotate: -956;">
+         <image>
+            <Image url="@../assets/icons8-leaves-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="261.0" fitWidth="412.0" layoutX="733.0" layoutY="109.0" opacity="0.32" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/437-4370559_side-effects-of-green-tea-transparent-green-tea.png" />
+         </image>
+         <effect>
+            <DropShadow color="#4a9a5c" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

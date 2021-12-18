@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="827.0" prefWidth="911.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditSupplyFormController">
+   <children>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="237.0" layoutY="737.0" onAction="#updateDetailOnAction" prefHeight="49.0" prefWidth="368.0" style="-fx-background-color: #c56cf0; -fx-background-radius: 25; -fx-border-width: 2; -fx-border-radius: 25; -fx-border-color: white;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <AnchorPane layoutX="248.0" layoutY="516.0" prefHeight="51.0" prefWidth="191.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtSackQty" layoutX="13.0" layoutY="6.0" onKeyReleased="#sqty_KeyTyped" prefHeight="41.0" prefWidth="164.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="80.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Sack Qty">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="466.0" layoutY="516.0" prefHeight="51.0" prefWidth="191.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtSackWeight" layoutX="10.0" layoutY="6.0" onKeyReleased="#sweight_KeyTyped" prefHeight="41.0" prefWidth="164.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="107.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Sack Weight">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="688.0" layoutY="516.0" prefHeight="51.0" prefWidth="191.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtWholeWeight" layoutX="12.0" layoutY="6.0" onKeyReleased="#whweight_KeyTyped" prefHeight="41.0" prefWidth="164.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="123.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Whole Weight">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="24.0" layoutY="593.0" prefHeight="51.0" prefWidth="191.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtCoarseWeight" layoutX="12.0" layoutY="6.0" onKeyReleased="#coarse_KeyTyped" prefHeight="41.0" prefWidth="164.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="67.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Coarse ">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="248.0" layoutY="593.0" prefHeight="51.0" prefWidth="191.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtWaterWeight" layoutX="11.0" layoutY="6.0" onKeyReleased="#wet_KeyTyped" prefHeight="41.0" prefWidth="164.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="47.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Wet">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="205.0" layoutY="431.0" prefHeight="49.0" prefWidth="290.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtTransport" layoutX="10.0" layoutY="6.0" onKeyReleased="#trans_KeyTyped" prefHeight="41.0" prefWidth="264.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="141.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Transport Charge">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXCheckBox fx:id="cboxNo" checkedColor="#332ad6" layoutX="39.0" layoutY="456.0" onMouseClicked="#transportNo_Clicked" text="NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="cboxYes" checkedColor="#332ad6" layoutX="106.0" layoutY="456.0" onMouseClicked="#transportYes_Clicked" text="YES">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="47.0" layoutY="430.0" prefHeight="21.0" prefWidth="117.0" text="Transportation">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <AnchorPane layoutX="-1.0" prefHeight="95.0" prefWidth="912.0" style="-fx-background-color: #9b59b6;">
+         <children>
+            <Label alignment="CENTER" layoutX="314.0" layoutY="17.0" prefHeight="55.0" prefWidth="249.0" style="-fx-background-color: #9b59b6;" text="Edit Supply" textFill="#c8d6e5" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="2.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="2.0" layoutY="46.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="79.0" layoutY="2.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="153.0" layoutY="4.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="231.0" layoutY="4.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="79.0" layoutY="43.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="153.0" layoutY="45.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="230.0" layoutY="45.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="615.0" layoutY="2.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="692.0" layoutY="3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="769.0" layoutY="4.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="847.0" layoutY="7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="621.0" layoutY="44.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="698.0" layoutY="45.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="775.0" layoutY="46.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="851.0" layoutY="48.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="466.0" layoutY="593.0" prefHeight="51.0" prefWidth="191.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtBoiled" layoutX="12.0" layoutY="6.0" onKeyReleased="#boiled_KeyTyped" prefHeight="41.0" prefWidth="164.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="58.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Boiled">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="688.0" layoutY="593.0" prefHeight="51.0" prefWidth="191.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtReject" layoutX="11.0" layoutY="6.0" onKeyReleased="#reject_KeyTyped" prefHeight="41.0" prefWidth="164.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="58.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Reject">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="cmbSupplyID" layoutX="28.0" layoutY="129.0" prefHeight="49.0" prefWidth="290.0" style="-fx-background-radius: 25; -fx-border-width: 2; -fx-border-color: #a4b0be; -fx-border-radius: 25; -fx-background-color: white;" />
+      <Label layoutX="49.0" layoutY="112.0" prefHeight="34.0" prefWidth="141.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Select Supply ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTeaCode" layoutX="28.0" layoutY="517.0" prefHeight="49.0" prefWidth="191.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2; -fx-border-color: #a4b0be;" />
+      <Label layoutX="47.0" layoutY="505.0" prefHeight="21.0" prefWidth="80.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Tea Code">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblSupplyDetail" layoutX="9.0" layoutY="207.0" prefHeight="198.0" prefWidth="893.0" stylesheets="@../Styles/style.css">
+        <columns>
+          <TableColumn prefWidth="90.0" text="Tea Code" />
+          <TableColumn prefWidth="67.0" text="SackQty" />
+            <TableColumn prefWidth="101.0" text="Sack Weight" />
+            <TableColumn prefWidth="127.0" text="Whole Weight" />
+            <TableColumn prefWidth="93.0" text="Coarse" />
+            <TableColumn prefWidth="85.0" text="Wet" />
+            <TableColumn prefWidth="94.0" text="Boiled" />
+            <TableColumn prefWidth="93.0" text="Reject" />
+            <TableColumn prefWidth="142.0" text="Net Weight" />
+        </columns>
+      </TableView>
+      <Label layoutX="355.0" layoutY="112.0" prefHeight="21.0" prefWidth="117.0" text="Supplier ID       :" textFill="#110a8d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="355.0" layoutY="137.0" prefHeight="21.0" prefWidth="117.0" text="Supply Date     :" textFill="#110a8d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="626.0" layoutY="136.0" prefHeight="21.0" prefWidth="117.0" text="Supply Time     :" textFill="#110a8d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="168.0" prefHeight="21.0" prefWidth="117.0" text="Whole Weight  :" textFill="#110a8d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="626.0" layoutY="168.0" prefHeight="21.0" prefWidth="117.0" text="Whole  Cost      :" textFill="#110a8d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierId" layoutX="483.0" layoutY="112.0" prefHeight="21.0" prefWidth="157.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplyDate" layoutX="483.0" layoutY="137.0" prefHeight="21.0" prefWidth="157.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplyTime" layoutX="754.0" layoutY="136.0" prefHeight="21.0" prefWidth="150.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWholeWeight" layoutX="481.0" layoutY="168.0" prefHeight="21.0" prefWidth="157.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWholeCost" layoutX="754.0" layoutY="168.0" prefHeight="21.0" prefWidth="150.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="743.0" layoutY="677.0" onAction="#addDataOnAction" prefHeight="34.0" prefWidth="131.0" style="-fx-border-color: #346ccc; -fx-border-width: 2;" text="Add To Table" textFill="#346ccc">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

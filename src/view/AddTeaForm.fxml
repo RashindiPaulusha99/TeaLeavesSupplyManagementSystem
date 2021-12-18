@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="635.0" prefWidth="610.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddTeaFormController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="101.0" prefWidth="610.0" style="-fx-background-color: #6c5ce7;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <Label layoutX="174.0" layoutY="29.0" prefHeight="39.0" prefWidth="262.0" text="Save Tea Detail" textFill="#c8d6e5" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="3.0" layoutY="48.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="48.0" layoutY="3.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="93.0" layoutY="3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="138.0" layoutY="3.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="48.0" layoutY="48.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="93.0" layoutY="48.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="138.0" layoutY="48.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="423.0" layoutY="3.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="468.0" layoutY="3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="513.0" layoutY="3.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="563.0" layoutY="3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="429.0" layoutY="48.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="474.0" layoutY="48.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="519.0" layoutY="48.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="563.0" layoutY="48.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="161.0" prefHeight="49.0" prefWidth="377.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtTeaId" layoutX="11.0" layoutY="6.0" onKeyReleased="#tea_KeyReleased" prefHeight="39.0" prefWidth="353.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="60.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Tea ID">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="253.0" prefHeight="49.0" prefWidth="554.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtName" layoutX="12.0" layoutY="4.0" onKeyReleased="#tea_KeyReleased" prefHeight="41.0" prefWidth="532.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="60.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Name">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="346.0" prefHeight="49.0" prefWidth="554.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <ComboBox fx:id="cmbTeaTypes" layoutX="12.0" layoutY="6.0" prefHeight="39.0" prefWidth="525.0" styleClass="combo-box" stylesheets="@../Styles/style.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="439.0" prefHeight="49.0" prefWidth="325.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtUnitPrice" layoutX="12.0" layoutY="4.0" onKeyReleased="#tea_KeyReleased" prefHeight="41.0" prefWidth="301.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="88.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Unit Price">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="368.0" layoutY="446.0" prefHeight="34.0" prefWidth="80.0" text="Per KG">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="331.0" prefHeight="34.0" prefWidth="52.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Type">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="310.0" layoutY="538.0" onAction="#saveTeaOnAction" prefHeight="49.0" prefWidth="262.0" style="-fx-background-radius: 30; -fx-background-color: #2980b9; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="36.0" layoutY="538.0" onAction="#clearTeaOnAction" prefHeight="49.0" prefWidth="262.0" style="-fx-background-radius: 30; -fx-background-color: #ff7675; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="Clear" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

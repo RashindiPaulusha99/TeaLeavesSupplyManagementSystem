@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paymentContext" prefHeight="827.0" prefWidth="1043.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MonthlyPaymentReportFormController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="156.0" prefHeight="677.0" prefWidth="1052.0" style="-fx-background-color: #dff9fb;">
+         <children>
+            <TableView fx:id="tblPayment" layoutX="16.0" layoutY="87.0" prefHeight="436.0" prefWidth="1023.0" stylesheets="@../Styles/style.css">
+               <columns>
+                  <TableColumn prefWidth="89.0" text="Payment ID" />
+                  <TableColumn prefWidth="89.0" text="Supplier Id" />
+                  <TableColumn minWidth="0.0" prefWidth="67.0" text="T.P. Qty" />
+                  <TableColumn prefWidth="110.0" text="Tea Packet" />
+                  <TableColumn prefWidth="74.0" text="F. Qty" />
+                  <TableColumn prefWidth="105.0" text="Fertilizer" />
+                  <TableColumn prefWidth="103.0" text="Advance" />
+                  <TableColumn prefWidth="70.0" text="Discount" />
+                  <TableColumn prefWidth="98.0" text="Transport" />
+                  <TableColumn prefWidth="109.0" text="LeavesCost" />
+                  <TableColumn prefWidth="108.0" text="Total Amount" />
+               </columns>
+            </TableView>
+            <Separator layoutX="11.0" layoutY="601.0" prefHeight="2.0" prefWidth="1023.0" />
+            <Label layoutX="31.0" layoutY="544.0" text="Total Payments  :">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPaymentAmount" layoutX="189.0" layoutY="546.0" prefHeight="27.0" prefWidth="77.0" text="0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="948.0" layoutY="615.0" onAction="#editOnAction" prefHeight="42.0" prefWidth="77.0" style="-fx-background-radius: 15;" text="Edit" textFill="#30336b">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="843.0" layoutY="615.0" onAction="#deleteOnAction" style="-fx-background-radius: 15;" text="Delete" textFill="#30336b">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXDatePicker fx:id="startDate" defaultColor="#160094" layoutX="34.0" layoutY="27.0" prefHeight="31.0" prefWidth="229.0" promptText="Start Date" />
+            <JFXDatePicker fx:id="endDate" defaultColor="#160094" layoutX="295.0" layoutY="27.0" prefHeight="31.0" prefWidth="229.0" promptText="End Date" />
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="552.0" layoutY="99.0" onAction="#annualyPaymentOnAction" prefHeight="45.0" prefWidth="254.0" style="-fx-border-color: black;" text="Annually Payment Reports">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="4.0" layoutY="2.0" prefHeight="31.0" prefWidth="1034.0" text="ZETA Tea Factory">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="33.0" prefHeight="31.0" prefWidth="1034.0" text="Payment Reports" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="264.0" layoutY="87.0" prefHeight="69.0" prefWidth="275.0" style="-fx-background-color: #dff9fb;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="11.0" layoutY="12.0" prefHeight="45.0" prefWidth="254.0" style="-fx-border-color: black;" text="Monthly Payment Reports">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="99.0" onAction="#dailyPaymentOnAction" prefHeight="45.0" prefWidth="241.0" style="-fx-border-color: black;" text="Daily Payment Reports">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="827.0" prefWidth="1043.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeFormController">
+   <children>
+      <TextField fx:id="txtSearch" layoutX="19.0" layoutY="135.0" onAction="#searchOnAction" prefHeight="45.0" prefWidth="716.0" promptText="Search Here" style="-fx-border-radius: 25; -fx-background-radius: 25;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="704.0" layoutY="147.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons8-search-50.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="747.0" layoutY="136.0" onAction="#openAddEmployeeForm" prefHeight="45.0" prefWidth="274.0" style="-fx-background-color: #74b9ff;" text="     SAVE" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="747.0" layoutY="219.0" onAction="#openEditEmployeeForm" prefHeight="45.0" prefWidth="274.0" style="-fx-background-color: #e056fd;" text="     EDIT" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="753.0" layoutY="145.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons8-add-64%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="753.0" layoutY="228.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons8-edit-48.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblEmployee" layoutX="15.0" layoutY="278.0" prefHeight="441.0" prefWidth="1014.0" stylesheets="@../Styles/style.css">
+        <columns>
+          <TableColumn prefWidth="91.0" text="EmployeeId" />
+          <TableColumn prefWidth="134.0" text="Name" />
+            <TableColumn prefWidth="136.0" text="Address" />
+            <TableColumn prefWidth="97.0" text="DOB" />
+            <TableColumn prefWidth="83.0" text="Gender" />
+            <TableColumn prefWidth="113.0" text="Contact No" />
+            <TableColumn prefWidth="124.0" text="NIC" />
+            <TableColumn prefWidth="160.0" text="Designation" />
+            <TableColumn fx:id="colRemove" prefWidth="75.0" text="Remove" />
+        </columns>
+      </TableView>
+      <Separator layoutX="15.0" layoutY="98.0" prefHeight="1.0" prefWidth="1014.0" />
+      <Label alignment="CENTER" layoutX="22.0" layoutY="27.0" prefHeight="21.0" prefWidth="999.0" text="Employee Detail Form" textFill="#eab543" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="757.0" text="Amount Of Employees">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAmountEmployee" layoutX="466.0" layoutY="738.0" prefHeight="63.0" prefWidth="76.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

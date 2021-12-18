@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="787.0" prefWidth="658.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddEmployeeFormController">
+   <children>
+      <AnchorPane prefHeight="95.0" prefWidth="658.0" style="-fx-background-color: #6c5ce7;">
+         <children>
+            <Label alignment="CENTER" layoutX="188.0" layoutY="19.0" prefHeight="55.0" prefWidth="283.0" style="-fx-background-color: #6c5ce7;" text="Save Employee" textFill="#c8d6e5" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="2.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="2.0" layoutY="46.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="55.0" layoutY="5.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="112.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="159.0" layoutY="5.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="55.0" layoutY="46.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="112.0" layoutY="46.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="158.0" layoutY="46.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="454.0" layoutY="5.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="501.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="548.0" layoutY="5.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="597.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="460.0" layoutY="47.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="507.0" layoutY="47.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="554.0" layoutY="47.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="601.0" layoutY="46.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <VBox layoutX="23.0" layoutY="114.0" prefHeight="560.0" prefWidth="591.0" style="-fx-background-color: white;" stylesheets="@../Styles/style.css">
+         <children>
+            <AnchorPane prefHeight="34.0" prefWidth="619.0" />
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="572.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+               <children>
+                  <TextField fx:id="txtEmployeeId" layoutX="11.0" layoutY="6.0" onKeyReleased="#employee_KeyReleased" prefHeight="41.0" prefWidth="588.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                  <Label layoutX="29.0" layoutY="-18.0" prefHeight="34.0" prefWidth="110.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Employee ID">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="613.0" />
+            <AnchorPane layoutX="10.0" layoutY="44.0" prefHeight="49.0" prefWidth="619.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+               <children>
+                  <TextField fx:id="txtName" layoutX="13.0" layoutY="6.0" onKeyReleased="#employee_KeyReleased" prefHeight="41.0" prefWidth="588.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                  <Label layoutX="27.0" layoutY="-18.0" prefHeight="34.0" prefWidth="57.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Name">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="93.0" prefHeight="39.0" prefWidth="613.0" />
+            <AnchorPane layoutX="10.0" layoutY="119.0" prefHeight="49.0" prefWidth="619.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+               <children>
+                  <TextField fx:id="txtAddress" layoutX="12.0" layoutY="6.0" onKeyReleased="#employee_KeyReleased" prefHeight="41.0" prefWidth="588.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                  <Label layoutX="28.0" layoutY="-18.0" prefHeight="34.0" prefWidth="75.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Address">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="168.0" prefHeight="40.0" prefWidth="613.0" />
+            <AnchorPane layoutX="10.0" layoutY="232.0" prefHeight="263.0" prefWidth="613.0">
+               <children>
+                  <AnchorPane prefHeight="51.0" prefWidth="335.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+                     <children>
+                        <TextField fx:id="txtAge" layoutX="14.0" layoutY="6.0" onKeyReleased="#employee_KeyReleased" prefHeight="41.0" prefWidth="305.0" promptText="YYYY-MM-DD" styleClass="textField" stylesheets="@../Styles/style.css" />
+                        <Label layoutX="24.0" layoutY="-18.0" prefHeight="34.0" prefWidth="47.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="DOB">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXRadioButton fx:id="radiobtnMale" layoutX="372.0" layoutY="14.0" onMouseClicked="#genderMale_MouseClicked" text="Male">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="radiobtnFemale" layoutX="476.0" layoutY="14.0" onMouseClicked="#genderFemale_MouseClicked" prefHeight="25.0" prefWidth="92.0" text="Female">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <AnchorPane layoutY="90.0" prefHeight="49.0" prefWidth="305.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+                     <children>
+                        <TextField fx:id="txtContact" layoutX="16.0" layoutY="6.0" onKeyReleased="#employee_KeyReleased" prefHeight="41.0" prefWidth="277.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                        <Label layoutX="28.0" layoutY="-18.0" prefHeight="34.0" prefWidth="103.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Contact NO:">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="329.0" layoutY="90.0" prefHeight="49.0" prefWidth="290.0" styleClass="textPane" stylesheets="@../Styles/style.css" AnchorPane.leftAnchor="329.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <TextField fx:id="txtNIC" layoutX="13.0" layoutY="6.0" onKeyReleased="#employee_KeyReleased" prefHeight="41.0" prefWidth="257.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                        <Label layoutX="27.0" layoutY="-18.0" prefHeight="34.0" prefWidth="47.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="NIC">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-1.0" layoutY="177.0" prefHeight="49.0" prefWidth="613.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+                     <children>
+                        <TextField fx:id="txtDesignation" layoutX="11.0" layoutY="6.0" onKeyReleased="#employee_KeyReleased" prefHeight="41.0" prefWidth="588.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+                        <Label layoutX="32.0" layoutY="-18.0" prefHeight="34.0" prefWidth="103.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Designation">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="349.0" layoutY="690.0" onAction="#saveEmployeeOnAction" prefHeight="49.0" prefWidth="294.0" style="-fx-background-radius: 30; -fx-background-color: #2980b9; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="Save" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="690.0" onAction="#clearEmployeeOnAction" prefHeight="49.0" prefWidth="313.0" style="-fx-background-radius: 30; -fx-background-color: #ff7675; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="Clear" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

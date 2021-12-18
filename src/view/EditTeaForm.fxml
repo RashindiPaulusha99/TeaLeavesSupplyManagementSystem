@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="607.0" prefWidth="582.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditTeaFormController">
+   <children>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="60.0" layoutY="505.0" onAction="#updateDetailsOnAction" prefHeight="52.0" prefWidth="462.0" style="-fx-background-color: #cd84f1; -fx-background-radius: 25; -fx-border-color: white; -fx-border-radius: 25; -fx-border-width: 2;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="-2.0" prefHeight="95.0" prefWidth="584.0" style="-fx-background-color: #9b59b6;">
+         <children>
+            <Label alignment="CENTER" layoutX="163.0" layoutY="28.0" prefHeight="39.0" prefWidth="258.0" text="Edit Tea Detail" textFill="#c8d6e5">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="2.0" layoutY="48.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="51.0" layoutY="2.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="100.0" layoutY="2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="149.0" layoutY="2.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="51.0" layoutY="48.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="100.0" layoutY="48.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="149.0" layoutY="48.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="397.0" layoutY="2.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="446.0" layoutY="2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="495.0" layoutY="2.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="535.0" layoutY="2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="404.0" layoutY="48.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="446.0" layoutY="48.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="495.0" layoutY="48.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="49.0" layoutX="535.0" layoutY="48.0" opacity="0.38" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-leaves-64.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <AnchorPane layoutX="40.0" layoutY="142.0" prefHeight="49.0" prefWidth="333.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtTeaId" layoutX="11.0" layoutY="6.0" prefHeight="41.0" prefWidth="310.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="60.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Tea ID">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="40.0" layoutY="232.0" prefHeight="49.0" prefWidth="505.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <ComboBox fx:id="cmbType" layoutX="13.0" layoutY="6.0" prefHeight="41.0" prefWidth="478.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="40.0" layoutY="324.0" prefHeight="49.0" prefWidth="505.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtName" layoutX="14.0" layoutY="6.0" onKeyReleased="#name_KeYType" prefHeight="41.0" prefWidth="478.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="60.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Name">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="40.0" layoutY="420.0" prefHeight="49.0" prefWidth="333.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtUnitPrice" layoutX="9.0" layoutY="6.0" onKeyReleased="#price_KeyType" prefHeight="41.0" prefWidth="310.0" styleClass="textField" stylesheets="@../Styles/style.css" />
+            <Label layoutX="17.0" layoutY="-18.0" prefHeight="34.0" prefWidth="90.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Unit Price">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="52.0" layoutY="215.0" prefHeight="34.0" prefWidth="49.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Type">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

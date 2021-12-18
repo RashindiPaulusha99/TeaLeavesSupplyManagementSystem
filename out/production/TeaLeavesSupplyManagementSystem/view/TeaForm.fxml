@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="838.0" prefWidth="1092.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TeaFormController">
+   <children>
+      <TextField fx:id="txtSearch" layoutX="27.0" layoutY="129.0" onAction="#searchTeaDetailsOnAction" prefHeight="44.0" prefWidth="675.0" promptText="Search Here" style="-fx-background-radius: 25;">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="663.0" layoutY="142.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons8-search-50.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblTeaDetails" layoutX="20.0" layoutY="252.0" prefHeight="411.0" prefWidth="1053.0" stylesheets="@../Styles/style.css" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="252.0">
+        <columns>
+          <TableColumn prefWidth="133.0" text="Tea ID" />
+          <TableColumn prefWidth="152.0" text="Name" />
+            <TableColumn prefWidth="255.0" text="Type" />
+            <TableColumn prefWidth="144.0" text="Unit Price" />
+            <TableColumn prefWidth="165.0" text="Qty" />
+            <TableColumn prefWidth="104.0" text="Edit" />
+            <TableColumn prefWidth="99.0" text="Remove" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="28.0" prefHeight="21.0" prefWidth="1040.0" text="Tea Detail Form" textFill="#009432" underline="true">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="19.0" layoutY="93.0" prefHeight="0.0" prefWidth="1053.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="20.0" />
+      <JFXButton buttonType="RAISED" layoutX="726.0" layoutY="129.0" onAction="#openAddTeaForm" prefHeight="45.0" prefWidth="338.0" style="-fx-background-color: #686de0;" text="ADD" textFill="WHITE" AnchorPane.leftAnchor="726.0" AnchorPane.rightAnchor="28.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="733.0" layoutY="137.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons8-add-64%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="27.0" layoutY="727.0" prefHeight="31.0" prefWidth="216.0" text="Total Tea Quantity " AnchorPane.bottomAnchor="80.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalQty" layoutX="44.0" layoutY="775.0" prefHeight="32.0" prefWidth="140.0" style="-fx-border-color: black;" text="0.00KG" textFill="#e84118" AnchorPane.bottomAnchor="33.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="462.0" layoutY="727.0" prefHeight="31.0" prefWidth="246.0" text="Maximum Tea Quantity ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="774.0" layoutY="727.0" prefHeight="31.0" prefWidth="246.0" text="Minimum Tea Quantity ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMaxCode" layoutX="462.0" layoutY="775.0" prefHeight="30.0" prefWidth="107.0" text="code :" textFill="#0b14b8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMinCode" layoutX="774.0" layoutY="775.0" prefHeight="30.0" prefWidth="107.0" text="code :" textFill="#0b14b8">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMaxQty" layoutX="582.0" layoutY="775.0" prefHeight="30.0" prefWidth="181.0" text="qty" textFill="#e81212">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMinQty" layoutX="897.0" layoutY="775.0" prefHeight="30.0" prefWidth="173.0" text="qty" textFill="#e81212">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="19.0" layoutY="703.0" prefHeight="0.0" prefWidth="1053.0" />
+   </children>
+</AnchorPane>

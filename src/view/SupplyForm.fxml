@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="supplyContext" prefHeight="838.0" prefWidth="1092.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplyFormController">
+   <children>
+      <Separator layoutX="24.0" layoutY="87.0" prefHeight="3.0" prefWidth="1045.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="23.0" />
+      <Label alignment="CENTER" layoutX="24.0" layoutY="14.0" prefHeight="37.0" prefWidth="1045.0" text="Supply Acceptance Form" textFill="#bc1e82" underline="true" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="23.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="31.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblSupplyDetails" layoutX="14.0" layoutY="409.0" prefHeight="261.0" prefWidth="1063.0" stylesheets="@../Styles/style.css" AnchorPane.bottomAnchor="168.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="409.0">
+        <columns>
+          <TableColumn prefWidth="104.99996948242188" text="Tea Code" />
+            <TableColumn prefWidth="72.0" text="Sack qty" />
+            <TableColumn prefWidth="97.0" text="Sack weight" />
+            <TableColumn prefWidth="114.0" text="Whole weight" />
+            <TableColumn prefWidth="90.0" text="Coarse" />
+            <TableColumn prefWidth="89.0" text="Wet" />
+            <TableColumn prefWidth="92.0" text="Boiled" />
+            <TableColumn prefWidth="86.0" text="Reject" />
+            <TableColumn prefWidth="114.0" text="Net weight" />
+            <TableColumn prefWidth="115.0" text="NetAmount" />
+            <TableColumn prefWidth="99.0" text="Remove" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="947.0" layoutY="352.0" onAction="#addSupplyOnAction" prefHeight="45.0" prefWidth="115.0" style="-fx-background-radius: 25; -fx-border-radius: 25; -fx-border-width: 2; -fx-border-color: #25CCF7;" text="Add" textFill="#25ccf7" AnchorPane.rightAnchor="30.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="879.0" layoutY="683.0" onAction="#acceptSupplyOnAction" prefHeight="43.0" prefWidth="195.0" style="-fx-border-color: #F97F51; -fx-border-width: 2;" text="Accept Supply" textFill="#f97f51" AnchorPane.bottomAnchor="106.0" AnchorPane.rightAnchor="18.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="447.0" layoutY="772.0" onAction="#issueTicketOnAction" prefHeight="45.0" prefWidth="122.0" style="-fx-border-color: #57606f; -fx-border-width: 2;" text="Issue Ticket" textFill="#57606f">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="16.0" layoutY="694.0" prefHeight="27.0" prefWidth="122.0" text="Tatal Weight :" textFill="#3f1d9e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalWeight" layoutX="147.0" layoutY="694.0" prefHeight="27.0" prefWidth="152.0" text="00.00 KG" textFill="#ea2027">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="694.0" prefHeight="27.0" prefWidth="99.0" text="Tatal Cost :" textFill="#3f1d9e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalCost" layoutX="392.0" layoutY="695.0" prefHeight="27.0" prefWidth="201.0" text="00.00 /=" textFill="#ea2027">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbEmployeeIds" layoutX="830.0" layoutY="45.0" prefHeight="35.0" prefWidth="236.0" promptText="Employee ID" style="-fx-background-radius: 20; -fx-border-width: 2; -fx-border-color: #f39c12; -fx-border-radius: 20; -fx-background-color: white;" />
+      <TextField fx:id="txtSupplierName" layoutX="269.0" layoutY="99.0" prefHeight="37.0" prefWidth="263.0" promptText="Name" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #273c75;" />
+      <ComboBox fx:id="cmbSupplierIds" layoutX="27.0" layoutY="99.0" prefHeight="37.0" prefWidth="220.0" promptText="Supplier ID" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #e17055; -fx-background-color: white;" />
+      <TextField fx:id="txtSupplierAddress" layoutX="550.0" layoutY="99.0" prefHeight="37.0" prefWidth="255.0" promptText="Address" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #273c75;" />
+      <TextField fx:id="txtSupplierContact" layoutX="829.0" layoutY="99.0" prefHeight="37.0" prefWidth="236.0" promptText="Contact" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 3; -fx-border-color: #273c75;" />
+      <Separator layoutX="23.0" layoutY="158.0" prefHeight="3.0" prefWidth="1045.0" />
+      <AnchorPane layoutX="23.0" layoutY="44.0" prefHeight="37.0" prefWidth="228.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="22.0" layoutY="5.0" prefHeight="27.0" prefWidth="99.0" text="Supply ID :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSupplyId" layoutX="128.0" layoutY="5.0" prefHeight="27.0" prefWidth="93.0" text="S00-0001" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXCheckBox fx:id="cboxNo" checkedColor="#332ad6" layoutX="24.0" layoutY="381.0" onMouseClicked="#transportNo_Clicked" text="NO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="cboxYes" checkedColor="#332ad6" layoutX="88.0" layoutY="381.0" onMouseClicked="#transportYes_Clicked" text="YES">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="27.0" layoutY="355.0" prefHeight="20.0" prefWidth="122.0" text="Transportation :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="627.0" layoutY="178.0" orientation="VERTICAL" prefHeight="49.0" prefWidth="4.0" />
+      <AnchorPane layoutX="30.0" layoutY="178.0" prefHeight="49.0" prefWidth="168.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <Label layoutX="17.0" layoutY="-11.0" prefHeight="27.0" prefWidth="85.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Tea Code">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbTeaCodes" layoutX="11.0" layoutY="8.0" prefHeight="37.0" prefWidth="142.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="218.0" layoutY="178.0" prefHeight="49.0" prefWidth="182.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtTeaName" layoutX="11.0" layoutY="6.0" onKeyReleased="#supply_KeyReleased" prefHeight="37.0" prefWidth="159.0" styleClass="textField" stylesheets="@../Styles/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="17.0" layoutY="-11.0" prefHeight="27.0" prefWidth="57.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Name">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="424.0" layoutY="178.0" prefHeight="49.0" prefWidth="182.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtUnitPrice" layoutX="10.0" layoutY="6.0" onKeyReleased="#supply_KeyReleased" prefHeight="37.0" prefWidth="159.0" styleClass="textField" stylesheets="@../Styles/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="17.0" layoutY="-11.0" prefHeight="27.0" prefWidth="122.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Unit Price(Rs.)">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="652.0" layoutY="178.0" prefHeight="49.0" prefWidth="159.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtSackQty" layoutX="12.0" layoutY="6.0" onKeyReleased="#supply_KeyReleased" prefHeight="37.0" prefWidth="132.0" styleClass="textField" stylesheets="@../Styles/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="17.0" layoutY="-11.0" prefHeight="27.0" prefWidth="78.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Sack Qty">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="831.0" layoutY="178.0" prefHeight="49.0" prefWidth="220.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtSackWeight" layoutX="13.0" layoutY="6.0" onKeyReleased="#supply_KeyReleased" prefHeight="37.0" prefWidth="195.0" styleClass="textField" stylesheets="@../Styles/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="17.0" layoutY="-11.0" prefHeight="27.0" prefWidth="142.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Sack Weight(KG)">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="245.0" prefHeight="49.0" prefWidth="195.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtWholeWeight" layoutX="11.0" layoutY="6.0" onKeyReleased="#supply_KeyReleased" prefHeight="37.0" prefWidth="168.0" styleClass="textField" stylesheets="@../Styles/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="-18.0" prefHeight="34.0" prefWidth="159.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Whole Weight(KG)">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="247.0" layoutY="245.0" prefHeight="49.0" prefWidth="182.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtCoarseWeight" layoutX="16.0" layoutY="6.0" onKeyReleased="#supply_KeyReleased" prefHeight="37.0" prefWidth="152.0" styleClass="textField" stylesheets="@../Styles/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="16.0" layoutY="-17.0" prefHeight="34.0" prefWidth="105.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Coarse(KG)">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="462.0" layoutY="245.0" prefHeight="49.0" prefWidth="182.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtWaterWeight" layoutX="16.0" layoutY="6.0" onKeyReleased="#supply_KeyReleased" prefHeight="37.0" prefWidth="152.0" styleClass="textField" stylesheets="@../Styles/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="-18.0" prefHeight="34.0" prefWidth="78.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Wet(KG)">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="157.0" layoutY="341.0" prefHeight="49.0" prefWidth="263.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtTransport" layoutX="16.0" layoutY="6.0" onKeyReleased="#supply_TransKeyReleased" prefHeight="37.0" prefWidth="236.0" styleClass="textField" stylesheets="@../Styles/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="20.0" layoutY="-18.0" prefHeight="34.0" prefWidth="175.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Transport Charge(Rs.)">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="25.0" layoutY="310.0" prefHeight="3.0" prefWidth="1045.0" />
+      <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="68.0" layoutY="322.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons8-transportation-50.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnEdit" buttonType="RAISED" layoutX="749.0" layoutY="683.0" onAction="#editSupplyOnAction" prefHeight="45.0" prefWidth="115.0" style="-fx-border-width: 2; -fx-border-color: #c30ed0;" text="Edit" textFill="#c30ed0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="616.0" layoutY="683.0" onAction="#deleteSupplyOnAction" prefHeight="45.0" prefWidth="115.0" style="-fx-border-width: 2; -fx-border-color: #da2219;" text="Delete" textFill="#da2219">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="670.0" layoutY="245.0" prefHeight="49.0" prefWidth="175.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtBoiled" layoutX="16.0" layoutY="6.0" onKeyReleased="#supply_KeyReleased" prefHeight="37.0" prefWidth="142.0" styleClass="textField" stylesheets="@../Styles/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="-18.0" prefHeight="34.0" prefWidth="93.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Boiled(KG)">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="869.0" layoutY="245.0" prefHeight="49.0" prefWidth="182.0" styleClass="textPane" stylesheets="@../Styles/style.css">
+         <children>
+            <TextField fx:id="txtReject" layoutX="16.0" layoutY="6.0" onKeyReleased="#supply_KeyReleased" prefHeight="37.0" prefWidth="152.0" styleClass="textField" stylesheets="@../Styles/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="-18.0" prefHeight="34.0" prefWidth="93.0" styleClass="textLabel" stylesheets="@../Styles/style.css" text="Reject(KG)">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="14.0" layoutY="752.0" prefHeight="3.0" prefWidth="1063.0" />
+   </children>
+</AnchorPane>
